@@ -1,0 +1,113 @@
+/* General Body Styles */
+body {
+    font-family: 'Helvetica, Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Soft light background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Full height for centering */
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Darker text color */
+    margin-bottom: 20px; /* Margin below the heading */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #3498db; /* Blue background for nav */
+    padding: 10px 0;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space below the nav */
+}
+
+nav a {
+    margin: 0 15px; /* Spacing between links */
+    text-decoration: none;
+    color: white; /* White text for links */
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+nav a:hover {
+    color: #ffdd57; /* Yellow on hover */
+}
+
+/* Page Containers */
+.account-page, .enquiry-page, .home-page {
+    max-width: 400px; /* Set max width for pages */
+    margin: 20px; /* Margin around pages */
+    padding: 25px; /* Padding inside pages */
+    background-color: #ffffff; /* White background for clarity */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Elements */
+input, textarea, select {
+    width: 100%; /* Full width for input elements */
+    max-width: 300px; /* Max width set to 300px */
+    padding: 12px; /* Padding inside input fields */
+    margin: 12px 0; /* Margin above and below */
+    border: 1px solid #bdc3c7; /* Light border */
+    border-radius: 8px; /* Rounded borders */
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus effects */
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #3498db; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Glow effect on focus */
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+    height: 100px; /* Set a fixed height for textareas */
+}
+
+/* Buttons */
+button {
+    margin-left: 75px;
+    width: 100%; /* Full width for buttons */
+    max-width: 300px; /* Max width set to 300px */
+    padding: 12px; /* Padding inside buttons */
+    background-color: #3498db; /* Button background color */
+    color: white; /* White text for buttons */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d; /* Lighter text for footer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    nav a {
+        margin: 0 5px; /* Smaller margins on mobile */
+    }
+
+    .account-page, .enquiry-page, .home-page {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
